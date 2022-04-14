@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trapt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> TRAPT STORE</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./giohang.html">Giỏ hàng</a></li>
+                <li><a href="./dangky.html">Đăng ký</a></li>
+            </ul>
+        </div>
+    <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+
+        </table>
+    </div>
+    <div>
+        <script src="https://uhchat.net/code.php?f=823e6d"></script>
+    </div>
+    
+    <script>
+        var c = JSON.parse(sessionStorage.getItem("sp"));
+        ss();
+        function ss() {
+            var tongtt = 0;
+            var ttgh = "";
+            for (let i = 0; i < c.length; i++) {
+                var tt = Number(c[i][2]) * Number(c[i][3]);
+                tongtt += tt;
+                ttgh += `
+<tr>
+    <td id="stt">${i + 1}</td>
+    <td><img src='${c[i][0]}'></td>
+    <td>${c[i][1]}</td>
+    <td>${c[i][2]}</td>
+    <td><input type="number" value="${c[i][3]}" min="1" max="10" onchange="tinhlaidon(this)"></td>
+     <td id="tt">${tt}</td>
+     <td><button id="xoa" onclick="xoa(this)">Xóa</button></td>
+</tr>
+`
+            }
+
+            ttgh += `
+<tr>
+    <td colspan="5">TONG DON HANG</td>
+    <td id="tongtien">${tongtt}</td>
+</tr>
+`
+            document.getElementById("mycart").innerHTML = ttgh;
+        }
+    </script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trapt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="giohang">
+        <a href="./giohang.html" onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <!-- <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+
+        </table>
+    </div> -->
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1>TRAPT STORE</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+                <li><a href="dangky.html">Đăng ký</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="hehe">
+                <img src="./images/ss1.png" width="100%" id="slideshow">
+                <button id="next" onclick="next();">></button>
+                <button id="prev" onclick="back();"><</button>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt1.jpg" alt=""></div>
+                    <p><span>33990000</span>đ</p>
+                    <a href="#">iPhone 13 Pro Max 128 GB</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt2.jpg" alt=""></div>
+                    <p><span>9490000</span>đ</p>
+                    <a href="#">OPPO Reno6 Z 5G</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="./images/dt3.jpg" alt=""></div>
+                    <p><span>11990000</span>đ</p>
+                    <a href="#">Samsung Galaxy A73 5G 128GB</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt4.jpg" alt=""></div>
+                    <p><span>3990000</span></p>
+                    <a href="#">Realme C35</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt5.jpg" alt=""></div>
+                    <p><span>5190000</span>đ</p>
+                    <a href="#">Xiomi Redmi Note 11</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="./images/dt6.jpg" alt=""></div>
+                    <p><span>5990000</span>đ</p>
+                    <a href="#">Samsung Galaxy A23 6GB</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt7.jpg" alt=""></div>
+                    <p><span>3990000</span>đ</p>
+                    <a href="#">Vivo Y15a</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="./images/dt8.jpg" alt=""></div>
+                    <p><span>36990000</span>đ</p>
+                    <a href="#">iPhone 13 Pro Max 256GB</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <script src="https://uhchat.net/code.php?f=823e6d"></script>
+    </div>
+    <script src="js/cart.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

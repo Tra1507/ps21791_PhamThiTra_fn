@@ -1,0 +1,96 @@
+* {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.boxcenter{
+    display: block;
+}
+.row {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.header {
+    background-image: linear-gradient(#F90, #F60);
+    border: 1px #F60 solid;
+    color: rgb(65, 61, 61);
+    border-radius: 5px;
+}
+.header h1 {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #FFF;
+    text-align: center;
+}
+
+.menu {
+    background-color: black;
+    color: #CCC;
+    border-radius: 5px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: #CCC;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: white;
+    font-size: 0.8vw;
+}
+
+
+/* dang ky*/
+#form1{
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding: 10px 40px;
+    background: rgb(249, 248, 245);
+    border: 1px solid black;
+}
+#form1 .txt{
+    width: 500px;
+    padding: 6px;
+    border: solid 1px lightblue;
+}
+#form1 fieldset{
+    border: solid 1px lightblue;
+    margin-top: 0;
+}
+#form1 #dangki{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+}
+#form1 #baoloi{
+    margin: 0px auto;
+    color: red;
+}
+#form1 .loi{
+    width: 500px;
+    padding: 6px;
+    border: 1px solid red;
+    background-color: yellow;
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+body{
+    background-image: linear-gradient(#F90, #F60);
+    line-height: 50px;
+    margin: 0;
+}
+ul{
+    display: block;
+}
